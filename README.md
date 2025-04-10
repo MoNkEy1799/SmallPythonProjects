@@ -1,6 +1,9 @@
 # Collection of some small/ random Python projects
 
-## Lorenz_System
+## Circuit Visualizer
+Qiskit/ Perceval (Quandela) like visualizer for integrated photonic circuits.
+
+## Lorenz System
 3D animation of a Lorenz Attractor with PyQtGraph.
 
 - `Start`, `Stop`, `Reset` control the animation.
