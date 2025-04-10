@@ -24,3 +24,7 @@ Implementation of an image downsampler and pixel to ascii converter. Ascii conve
 - ***color/rgb***: fully converts the image to rgb ascii characters (default is 'full block' char: \u2588) using ANSI escape codes: https://en.wikipedia.org/wiki/ANSI_escape_code
 
 Main usage for this is to animate the measurement of integrated photonic chips: `integratedChip.py`.
+
+## ArXiv search
+
+Search through arXiv submissions by archive, category and date. By providing keywords, all submissions (titles and abstracts) are filtered by these keywords. The results are saved into a nicely formatted file including the title, abstract and link to each submission.
