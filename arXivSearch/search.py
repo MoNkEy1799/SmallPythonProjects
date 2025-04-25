@@ -44,9 +44,7 @@ if len(sys.argv) < 2:
           f"\t{format_text('-f', bold=True)} {format_text('file', underline=True)}\n"
           f"\t\tName of the output file (.txt is appended automatically). Defaults to 'Search Output'.\n"
           f"\t{format_text('-s', bold=True)} {format_text('save', underline=True)}\n"
-          f"\t\tSave old search result files if the given file path would overwrite them. Defaults to True.\n"
-          f"\t{format_text('-r', bold=True)} {format_text('run', underline=True)}\n"
-          f"\t\tRuns the search with default values.\n")
+          f"\t\tSave old search result files if the given file path would overwrite them. Defaults to True.\n")
     exit(1)
 
 # mapping for archives and categories
@@ -307,8 +305,8 @@ if category and category != archive and category not in category_map[archive_map
 current = date
 results = dict()
 print(f"Running search with:\n\t"
-      f"{format_text('archive', underline=True)}: {archive}\n\t"
-      f"{format_text('category', underline=True)}: {category}\n\t"
+      f"{format_text('archive', underline=True)}: {archive}\n\t" +
+      (f"{format_text('category', underline=True)}: {category}\n\t" if category else "") +
       f"{format_text('date', underline=True)}: {date.strftime("%d.%m.%Y")}\n\t"
       f"{format_text('keywords', underline=True)}: {keywords.split(",")}\n\t"
       f"{format_text('outfile', underline=True)}: '{outfile}'\n\t"
